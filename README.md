@@ -9,8 +9,8 @@
 
 ## 🌍 Avalaible Languages
 
-- 🇬🇧 [README in english](README.md)
-- 🇪🇸 [README en español](README.es.md)
+[![🇪🇸 Español](https://img.shields.io/badge/Idioma-Español-red)](README.es.md)
+[![🇬🇧 English](https://img.shields.io/badge/Language-English-blue)](README.md)
 
 ## 🚀 Tech Stack
 
