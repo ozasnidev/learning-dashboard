@@ -1,37 +1,42 @@
-# 📘 Learning Dashboard .NET – Seguimiento Personal
+# 📘 Learning Dashboard – Personal Progress Tracker
 
-![Banner](./src/images/Banner_II.png)
+![Banner](./src/images/Banner.png)
 
-> Dashboard web creado con Astro para visualizar mi progreso en la ruta de aprendizaje de desarrollo con .NET.  
-> Administra tareas diarias, checkpoints, módulos completados y notas personales, todo desde una interfaz clara, responsiva y sin necesidad de backend.
-
----
-
-## 🚀 Tecnologías utilizadas
-
-- 🧠 [Astro](https://astro.build/) – Framework moderno de frontend
-- 🎨 [Tailwind CSS](https://tailwindcss.com/) – Diseño rápido y responsive
-- 📅 [FullCalendar.js](https://fullcalendar.io/) – Calendario interactivo
-- 🔄 [SortableJS](https://sortablejs.github.io/Sortable/) – Drag & Drop entre tareas
-- 💾 LocalStorage – Persistencia sin servidor
-- ✏️ Markdown – Notas semanales en formato editable
+> A personal dashboard built with Astro to visually track my progress along the .NET learning roadmap.  
+> It organizes daily tasks, completed modules, checkpoints, and notes in a clean, responsive, and serverless interface.
 
 ---
 
-## 📊 Funcionalidades destacadas
+## 🌍 Avalaible Languages
 
-- Panel resumen con KPIs: progreso total, días activos, checkpoints
-- Calendario diario con vista detallada y tareas programadas
-- Vista por día con sistema de tareas arrastrables (drag & drop)
-- Gestor de checkpoints y notas semanales
-- Proyecto 100% offline, sin necesidad de base de datos o backend
+- 🇬🇧 [README in english](README.md)
+- 🇪🇸 [README en español](README.es.md)
+
+## 🚀 Tech Stack
+
+- 🧠 [Astro](https://astro.build/) – Modern frontend framework
+- 🎨 [Tailwind CSS](https://tailwindcss.com/) – Fast, responsive UI design
+- 📅 [FullCalendar.js](https://fullcalendar.io/) – Interactive calendar for scheduling
+- 🔄 [SortableJS](https://sortablejs.github.io/Sortable/) – Drag & Drop task management
+- 💾 LocalStorage – Client-side persistence
+- ✏️ Markdown – Weekly note-taking in editable format
 
 ---
 
-## 🛠️ Instalación
+## 📊 Core Features
+
+- Summary panel with KPIs: overall progress, active days, checkpoints
+- Daily calendar with scheduled tasks and quick overview
+- Detailed per-day view with draggable task system
+- Checkpoint tracker and weekly notes section
+- Fully offline setup — no backend or database required
+
+---
+
+## 🛠️ Installation
 
 ```bash
-git clone https://github.com/ozasnidev/learning-dashboard.git
+git clone https://github.com/TU_USERNAME/learning-dashboard.git
 cd learning-dashboard
 npm install
 npm run dev
