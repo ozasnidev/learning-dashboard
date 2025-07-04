@@ -33,6 +33,15 @@
 
 ---
 
+---
+
+## 🐙 Despliegue
+
+  -  [![Netlify Status](https://api.netlify.com/api/v1/badges/27ee16b9-78c7-4679-b51b-2e5bc8cb8fac/deploy-status)](https://app.netlify.com/projects/netlearning-dashboard/deploys)
+  -  [🌐 .NET Learning Dashboard](https://netlearning-dashboard.netlify.app/)
+
+---
+
 ## 🛠️ Instalación
 
 ```bash
