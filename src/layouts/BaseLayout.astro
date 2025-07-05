@@ -1,0 +1,21 @@
+---
+import SidebarToggle from '../components/SidebarToggle.jsx';
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{Astro.props.title}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body class="bg-slate-900 text-white min-h-screen flex">
+
+    <!-- Island activa para vista móvil -->
+    <SidebarToggle client:load />
+
+    <!-- Main layout -->
+    <main class="flex-1 p-6 md:ml-64">
+      <slot />
+    </main>
+  </body>
+</html>
