@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SidebarToggle from '../components/SidebarToggle.jsx';
 import ThemeSwitchPro from '../components/ThemeSwitchPro.jsx';
+import DashboardSummary from '../components/DashboardSummary';
 import '../styles/utilities.css';
 ---
 
@@ -21,6 +22,6 @@ import '../styles/utilities.css';
   </div>
 
   <h2 class="hidden md:block text-3xl font-semibold mb-4 animate-fade-in">📊 Panel de resumen</h2>
-  <p>Aquí podrás ver el estado global de tu progreso.</p>
+  <DashboardSummary client:load />
 
 </BaseLayout>

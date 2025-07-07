@@ -40,7 +40,7 @@ export default function ThemeSwitchPro() {
           group-active:scale-105
           ${dark ? 'translate-x-[40px]' : 'translate-x-0'}`}
       >
-        {dark ? '🌙' : '☀️'}
+        {dark ? '☀️' : '🌙'}
       </div>
     </button>
   );

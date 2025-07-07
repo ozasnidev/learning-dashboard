@@ -10,14 +10,14 @@ const { title } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
-  <body class="bg-slate-900 text-white dark:bg-white dark:text-slate-900 min-h-screen flex">
+  <body class="bg-slate-900 text-white dark:bg-white dark:text-slate-900 min-h-screen w-full flex">
     <!-- Sidebar solo para escritorio -->
     <div class="hidden md:block">
       <Sidebar isOpen={true} onClose={() => {}} />
     </div>
 
     <!-- Main content -->
-    <main class="flex-1 p-6">
+    <main class="w-full max-w-7xl mx-auto px-4 md:px-8">
       <slot />
     </main>
 
