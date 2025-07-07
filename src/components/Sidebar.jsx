@@ -7,7 +7,7 @@ export default function Sidebar({ isOpen, onClose }) {
     >
       <div className="md:hidden flex justify-end mb-4">
         <button onClick={onClose} className="text-white hover:text-red-400">
-          <svg className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2">
+          <svg className="h-6 w-6 text-white dark:text-slate-800 transition-colors duration-300" fill="none" stroke="currentColor" strokeWidth="2">
             <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
