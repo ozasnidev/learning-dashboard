@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SidebarToggle from '../components/SidebarToggle.jsx';
 import ThemeSwitchPro from '../components/ThemeSwitchPro.jsx';
+import '../styles/utilities.css';
 ---
 
 <BaseLayout title="Dashboard | Inicio">
@@ -14,12 +15,12 @@ import ThemeSwitchPro from '../components/ThemeSwitchPro.jsx';
   </div>
   <!-- Header visible para todas las vistas -->
   <div class="flex items-center justify-between md:hidden mb-6">
-    <h2 class="text-lg font-semibold whitespace-nowrap text-right flex-1 ml-4">
+    <h2 class="text-lg font-semibold whitespace-nowrap text-right flex-1 ml-4 animate-fade-in">
       📊 Panel de resumen
     </h2>
   </div>
 
-  <h2 class="hidden md:block text-3xl font-semibold mb-4">📊 Panel de resumen</h2>
+  <h2 class="hidden md:block text-3xl font-semibold mb-4 animate-fade-in">📊 Panel de resumen</h2>
   <p>Aquí podrás ver el estado global de tu progreso.</p>
 
 </BaseLayout>
