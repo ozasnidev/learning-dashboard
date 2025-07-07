@@ -1,11 +1,11 @@
 export default function Sidebar({ isOpen, onClose }) {
   return (
     <aside
-      className={`fixed md:static top-0 left-0 h-full w-64 bg-slate-800 p-6 transition-transform duration-300 z-40
-        ${isOpen ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0 h-screen`}
+      className={`top-0 left-0 h-screen w-64 bg-slate-800 p-6 transition-transform duration-300 z-40
+        fixed md:static
+        ${isOpen ? 'translate-x-0 md:translate-x-0' : '-translate-x-full md:translate-x-0'}`}
     >
-      {/* Botón de cerrar en móvil */}
-      <div className="md:hidden flex justify-end">
+      <div className="md:hidden flex justify-end mb-4">
         <button onClick={onClose} className="text-white hover:text-red-400">
           <svg className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2">
             <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />

@@ -1,9 +1,21 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import SidebarToggle from '../components/SidebarToggle.jsx';
 ---
 
 <BaseLayout title="Dashboard | Inicio">
-  <h2 class="text-3xl font-semibold mb-4">📊 Panel de resumen</h2>
-  <p>Aquí podrás ver el estado global de tu progreso.</p>
-</BaseLayout>
 
+  <!-- Solo mobile: Botón hamburguesa y Sidebar slide-in -->
+  <SidebarToggle client:load />
+
+  <!-- Header visible para todas las vistas -->
+  <div class="flex items-center justify-between md:hidden mb-6">
+    <h2 class="text-lg font-semibold whitespace-nowrap text-right flex-1 ml-4">
+      📊 Panel de resumen
+    </h2>
+  </div>
+
+  <h2 class="hidden md:block text-3xl font-semibold mb-4">📊 Panel de resumen</h2>
+  <p>Aquí podrás ver el estado global de tu progreso.</p>
+
+</BaseLayout>
