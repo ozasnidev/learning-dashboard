@@ -2,7 +2,7 @@ export default function Sidebar({ isOpen, onClose }) {
   return (
     <aside
       className={`top-0 left-0 h-screen w-64 bg-slate-800 p-6 transition-transform duration-300 z-40
-        fixed md:static
+        fixed md:static dark:bg-white dark:text-slate-800
         ${isOpen ? 'translate-x-0 md:translate-x-0' : '-translate-x-full md:translate-x-0'}`}
     >
       <div className="md:hidden flex justify-end mb-4">
