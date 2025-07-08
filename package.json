@@ -11,6 +11,9 @@
   "dependencies": {
     "@astrojs/react": "^4.3.0",
     "@astrojs/tailwind": "^6.0.2",
+    "@fullcalendar/core": "^6.1.18",
+    "@fullcalendar/daygrid": "^6.1.18",
+    "@fullcalendar/react": "^6.1.18",
     "@tailwindcss/vite": "^4.1.11",
     "astro": "^5.10.2",
     "react": "^19.1.0",

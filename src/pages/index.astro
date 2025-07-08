@@ -3,11 +3,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import SidebarToggle from '../components/SidebarToggle.jsx';
 import ThemeSwitchPro from '../components/ThemeSwitchPro.jsx';
 import DashboardSummary from '../components/DashboardSummary';
+import CalendarPanel from '../components/CalendarPanel.jsx';
 import '../styles/utilities.css';
 ---
 
 <BaseLayout title="Dashboard | Inicio">
-
   <!-- Solo mobile: Botón hamburguesa y Sidebar slide-in -->
   <SidebarToggle client:load />
   
@@ -23,5 +23,5 @@ import '../styles/utilities.css';
 
   <h2 class="hidden md:block text-3xl font-semibold mb-4 animate-fade-in">📊 Panel de resumen</h2>
   <DashboardSummary client:load />
-
+  <CalendarPanel client:load />
 </BaseLayout>
