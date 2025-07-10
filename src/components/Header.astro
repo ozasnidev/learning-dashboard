@@ -1,6 +1,13 @@
 ---
+// Puedes pasar props si lo necesitas más adelante
 import ThemeSwitchPro from "./ThemeSwitchPro";
 import DashboardGreeting from "./DashboardGreeting";
+
+interface Props {
+  class?: string;
+}
+
+const { class: className } = Astro.props;
 ---
 <header class="flex items-center justify-between py-4 gap-x-4 mb-5 md:mb-20">
     
