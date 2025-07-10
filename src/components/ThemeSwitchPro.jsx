@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-export default function ThemeSwitchPro() {
+export default function ThemeSwitchPro({ className }) {
   const [dark, setDark] = useState(false);
 
   useEffect(() => {
@@ -24,7 +24,7 @@ export default function ThemeSwitchPro() {
     <button
       onClick={toggleTheme}
       aria-label="Toggle dark mode"
-      className={`group relative w-20 h-10 rounded-full p-[3px]
+      className={`group relative w-16 h-8 rounded-full p-[3px]
         transition-colors duration-500 ease-in-out ring-2 ring-transparent focus:ring-cyan-400 
         ${dark ? 'bg-cyan-500' : 'bg-gray-300'}`}
     >
@@ -34,11 +34,11 @@ export default function ThemeSwitchPro() {
 
       {/* Deslizador */}
       <div
-        className={`w-8 h-8 bg-white rounded-full shadow-md 
+        className={`w-6 h-6 bg-white rounded-full shadow-md 
           transition-transform duration-500 ease-in-out transform 
           flex items-center justify-center text-lg
           group-active:scale-105
-          ${dark ? 'translate-x-[40px]' : 'translate-x-0'}`}
+          ${dark ? 'translate-x-[36px]' : 'translate-x-0'}`}
       >
         {dark ? '☀️' : '🌙'}
       </div>
