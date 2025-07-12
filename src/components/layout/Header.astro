@@ -9,21 +9,20 @@ interface Props {
 
 const { class: className } = Astro.props;
 ---
-<header class="flex items-center justify-between py-4 gap-x-4 mb-5 md:mb-20">
-    
-        <div class="flex items-center justify-between md:hidden ">
-            <h2 class="text-lg font-semibold whitespace-nowrap text-right flex-1 ml-4 animate-fade-in m-0">
-                📊 Panel de resumen
-            </h2>
-        </div>
-        <h2 class="hidden md:block text-3xl font-semibold animate-fade-in m-0 text-left gap-x-2">
-            📊 Panel de resumen 
+<header class="sticky top-0 flex items-center justify-between py-4 gap-x-4 mb-5 md:mb-20">
+    <div class="flex items-center justify-between md:hidden ">
+        <h2 class="text-lg font-semibold whitespace-nowrap text-right flex-1 ml-4 animate-fade-in m-0">
+            📊 Panel de resumen
         </h2>
-        <div class="hidden md:block">
-            <DashboardGreeting className="animate-fade-in text-[0.6rem] text-gray-500 dark:text-gray-300" />
-        </div>
+    </div>
+    <h2 class="hidden md:block text-3xl font-semibold animate-fade-in m-0 text-left gap-x-2">
+        📊 Panel de resumen 
+    </h2>
+    <div class="hidden md:block">
+        <DashboardGreeting className="animate-fade-in text-[0.6rem] text-gray-500 dark:text-gray-300" />
+    </div>
 
-        <div class="self-end">
-            <ThemeSwitchPro className="scale-50" client:load/>
+    <div class="self-end">
+        <ThemeSwitchPro className="scale-50" client:load/>
         </div>
 </header>

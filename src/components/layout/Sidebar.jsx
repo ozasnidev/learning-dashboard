@@ -1,4 +1,18 @@
+import { useEffect } from 'react';
+
 export default function Sidebar({ isOpen, onClose }) {
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add('overflow-hidden');
+    } else {
+      document.body.classList.remove('overflow-hidden');
+    }
+
+    return () => {
+      document.body.classList.remove('overflow-hidden');
+    };
+  }, [isOpen]);
+
   return (
     <aside
       className={`top-0 left-0 h-screen w-64 bg-slate-800 p-6 transition-transform duration-300 z-40
@@ -7,7 +21,12 @@ export default function Sidebar({ isOpen, onClose }) {
     >
       <div className="md:hidden flex justify-end mb-4">
         <button onClick={onClose} className="text-white hover:text-red-400">
-          <svg className="h-6 w-6 text-white dark:text-slate-800 transition-colors duration-300" fill="none" stroke="currentColor" strokeWidth="2">
+          <svg
+            className="h-6 w-6 text-white dark:text-slate-800 transition-colors duration-300"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+          >
             <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
