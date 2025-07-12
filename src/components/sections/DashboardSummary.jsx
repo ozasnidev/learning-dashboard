@@ -1,4 +1,4 @@
-import StatCard from './StatCard.jsx';
+import StatCard from '../ui/StatCard';
 
 export default function DashboardSummary() {
   const stats = [

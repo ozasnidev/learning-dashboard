@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Sidebar from './Sidebar.jsx';
+import Sidebar from '../layout/Sidebar.jsx';
 
 export default function SidebarToggle() {
   const [isOpen, setIsOpen] = useState(false);
