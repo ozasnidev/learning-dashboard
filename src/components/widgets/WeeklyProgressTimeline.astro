@@ -1,0 +1,51 @@
+---
+import weeklyData from '../../data/weeklyPogress.json';
+
+function getColor(tasks: { done: boolean; title: string }[]) {
+  if (tasks.length === 0) return 'bg-gray-400'; // Sin tareas
+  const allDone = tasks.every((t) => t.done);
+  return allDone ? 'bg-green-500' : 'bg-orange-400';
+}
+
+function getStats(tasks: { done: boolean; title: string }[]) {
+  return `${tasks.filter(t => t.done).length}/${tasks.length}`;
+}
+---
+
+<!-- Contenedor timeline -->
+<div class="grid grid-cols-[repeat(13,_1fr)] w-full px-4 py-10 items-center">
+  {weeklyData.map((entry, index) => (
+    <>
+      <!-- Nodo -->
+      <div class="relative group flex flex-col items-center col-span-1 text-center">
+        <div class={`w-14 h-14 rounded-full flex items-center justify-center text-white font-bold ${getColor(entry.tasks)}`}>
+          {entry.day.charAt(0)}
+        </div>
+
+        <!-- Tooltip -->
+        <div class="absolute -top-32 left-1/2 -translate-x-1/2 bg-white dark:bg-gray-800 shadow-xl rounded-lg px-4 py-3 opacity-0 group-hover:opacity-100 transition z-30 w-[220px] text-left">
+          <p class="font-semibold text-gray-800 mb-2">{entry.day}</p>
+          <ul class="space-y-1 text-sm">
+            {entry.tasks.length > 0
+              ? entry.tasks.map(task => (
+                
+                  <li class={task.done ? "text-green-600" : "text-orange-500"}>
+                    {task.done ? '✅' : '⚠️'} {task.title}
+                  </li>
+                ))
+              : <li class="text-gray-500">Sin tareas asignadas</li>}
+          </ul>
+        </div>
+      </div>
+
+      <!-- Conector -->
+      {index < weeklyData.length - 1 && (
+        <div class={`h-1 ${getColor(entry.tasks)} rounded-full col-span-1`} />
+      )}
+    </>
+  ))}
+</div>
+
+
+
+

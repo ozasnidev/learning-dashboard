@@ -4,6 +4,7 @@ import Header from '../components/layout/Header.astro';
 import SidebarToggle from '../components/ui/SidebarToggle.jsx';
 import DashboardSummary from '../components/sections/DashboardSummary';
 import CalendarPanel from '../components/widgets/CalendarPanel.jsx';
+import WeeklyProgressTimeline from '../components/widgets/weeklyProgressTimeline.astro';
 import '../styles/utilities.css';
 ---
 
@@ -16,4 +17,5 @@ import '../styles/utilities.css';
   
   <DashboardSummary client:load />
   <CalendarPanel client:load />
+  <WeeklyProgressTimeline />
 </BaseLayout>

@@ -1,0 +1,39 @@
+[
+  {
+    "day": "Lunes",
+    "tasks": [
+      { "title": "Crear wireframe de Dashboard", "done": true },
+      { "title": "Revisión estructura components/", "done": true },
+      { "title": "Estudiar Astro", "done": false }
+    ]
+  },
+  {
+    "day": "Martes",
+    "tasks": [
+      { "title": "Implementar KPI Cards", "done": true },
+      { "title": "Fix Sidebar Mobile", "done": true }
+    ]
+  },
+  {
+    "day": "Miércoles",
+    "tasks": []
+  },
+  {
+    "day": "Jueves",
+    "tasks": [
+      { "title": "WeeklyTimeline diseño", "done": false }
+    ]
+  },
+  {
+    "day": "Viernes",
+    "tasks": []
+  },
+  {
+    "day": "Sábado",
+    "tasks": []
+  },
+  {
+    "day": "Domingo",
+    "tasks": []
+  }
+]
