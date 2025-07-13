@@ -8,7 +8,7 @@ export default function StatCard({ label, value, iconPath }) {
         <img
           src={iconPath}
           alt={label}
-          className="w-10 h-10"
+          className="w-10 h-10 invert-0 dark:invert"
           loading="lazy"
         />
       </div>
