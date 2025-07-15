@@ -76,20 +76,30 @@ export default function CalendarPage() {
           <div
             key={`${day.date}-${idx}`}
             onClick={() => setSelectedDay(day)}
-            className={`bg-white dark:bg-slate-900 cursor-pointer hover:ring-2 ring-blue-400 transition
-              min-h-[100px] h-full p-2 relative text-slate-800 dark:text-white ${day.current ? '' : 'opacity-50'}`}
-          >
-            <span className="absolute top-2 right-2 text-xs font-bold">{day.date}</span>
-            {day.events.map((ev, i) => (
-              <div
-                key={i}
-                className={`mt-6 text-xs rounded px-2 py-1 truncate text-white font-medium
-                  ${ev.color === 'blue' ? 'bg-blue-500' : 'bg-red-500'}`}
-              >
-                {ev.title}
-              </div>
-            ))}
-          </div>
+            className={`flex flex-col justify-between bg-white dark:bg-slate-900 cursor-pointer hover:ring-2 ring-blue-400 transition
+                min-h-[100px] h-full p-2 relative text-slate-800 dark:text-white ${day.current ? '' : 'opacity-50'}`}
+            >
+            {/* Número del día */}
+                <div className="text-right text-xs font-bold">{day.date}</div>
+                {/* Eventos mostrados */}
+                <div className="flex flex-col gap-1 mt-2">
+                    {day.events.slice(0, 2).map((ev, i) => (
+                    <div
+                        key={i}
+                        className={`text-xs rounded px-2 py-1 truncate text-white font-medium
+                        ${ev.color === 'blue' ? 'bg-blue-500' : 'bg-red-500'}`}
+                    >
+                        {ev.title}
+                    </div>
+                    ))}
+                    {/* Indicador "+N más" si hay más de 2 eventos */}
+                    {day.events.length > 2 && (
+                    <div className="text-xs text-slate-500 dark:text-slate-400 italic ml-1">
+                        +{day.events.length - 2} más
+                    </div>
+                    )}
+                </div>
+            </div>
         ))}
       </div>
 
