@@ -1,0 +1,39 @@
+---
+import { getMonthMatrix } from './../lib/calendar'; // Esta función nos devuelve días del mes organizados
+
+const { currentMonth, daysMatrix } = getMonthMatrix(); // → ['Julio 2025', [[{date: 1}, …], …]]
+---
+
+<section class="max-w-6xl mx-auto px-4 py-10">
+  <!-- Encabezado -->
+  <header class="flex justify-between items-center mb-6">
+    <h2 class="text-2xl font-bold text-slate-900 dark:text-white">{currentMonth}</h2>
+    <div class="space-x-2">
+      <button class="px-3 py-1 bg-slate-200 dark:bg-slate-700 rounded">←</button>
+      <button class="px-3 py-1 bg-slate-200 dark:bg-slate-700 rounded">→</button>
+    </div>
+  </header>
+
+  <!-- Días de la semana -->
+  <div class="grid grid-cols-7 mb-1 text-center text-sm font-medium text-slate-500 dark:text-slate-400">
+    {['Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb', 'Dom'].map(dia => (
+      <div>{dia}</div>
+    ))}
+  </div>
+
+  <!-- Grilla mensual -->
+  <div class="grid grid-cols-7 gap-px bg-slate-200 dark:bg-slate-700 rounded overflow-hidden">
+    {daysMatrix.flat().map((day, i) => (
+  <div class={`bg-white dark:bg-slate-900 min-h-[100px] p-2 relative ${day.current ? '' : 'opacity-50'}`}>
+    <span class="absolute top-2 right-2 text-xs font-bold">{day.date}</span>
+
+    {day.events.map((ev, idx) => (
+      <div class={`mt-6 text-xs rounded px-2 py-1 truncate text-white font-medium 
+        ${ev.color === 'blue' ? 'bg-blue-500' : ev.color === 'red' ? 'bg-red-500' : 'bg-slate-500'}`}>
+        {ev.title}
+      </div>
+    ))}
+  </div>
+))}
+  </div>
+</section>
