@@ -1,12 +1,14 @@
 import { useState } from 'react';
 
-function getMonthMatrix() {
-  const year = 2025;
-  const month = 6; // Julio (mes 7, cero-indexado)
-  const currentMonth = 'Julio 2025';
+function getMonthMatrix(year, month) {
+  const currentDate = new Date(year, month);
+  const currentMonth = currentDate.toLocaleString('es-ES', {
+    month: 'long',
+    year: 'numeric',
+  });
 
-  const firstDayOfMonth = new Date(year, month, 1);
-  const startOffset = (firstDayOfMonth.getDay() + 6) % 7;
+  const firstDay = new Date(year, month, 1);
+  const startOffset = (firstDay.getDay() + 6) % 7;
 
   const matrix = [];
   let dayCounter = 1 - startOffset;
@@ -15,47 +17,60 @@ function getMonthMatrix() {
     const week = [];
     for (let d = 0; d < 7; d++) {
       const dateObj = new Date(year, month, dayCounter);
-      const isCurrentMonth = dateObj.getMonth() === month;
+      const isCurrent = dateObj.getMonth() === month;
+
       const events =
-        isCurrentMonth && dateObj.getDate() % 5 === 0
+        isCurrent && dateObj.getDate() % 5 === 0
           ? [
               { title: 'Reunión dev', color: 'blue' },
               { title: 'Deadline cliente', color: 'red' },
             ]
           : [];
+
       week.push({
         date: dateObj.getDate(),
-        current: isCurrentMonth,
+        current: isCurrent,
         events,
       });
+
       dayCounter++;
     }
     matrix.push(week);
   }
 
-  return { currentMonth, daysMatrix: matrix };
+  return {
+    currentMonth: currentMonth.charAt(0).toUpperCase() + currentMonth.slice(1),
+    daysMatrix: matrix,
+  };
 }
 
 export default function CalendarPage() {
-  const { currentMonth, daysMatrix } = getMonthMatrix();
+  const [monthOffset, setMonthOffset] = useState(0);
   const [selectedDay, setSelectedDay] = useState(null);
 
+  const baseDate = new Date(2025, 6); // Julio 2025
+  const shownDate = new Date(baseDate.getFullYear(), baseDate.getMonth() + monthOffset);
+  const { currentMonth, daysMatrix } = getMonthMatrix(shownDate.getFullYear(), shownDate.getMonth());
+
   return (
-    <section className="max-w-8xl mx-auto ">
+    <section className="max-w-6xl mx-auto px-4 py-10">
+      {/* Encabezado de mes */}
       <header className="flex justify-between items-center mb-6">
-        <h2 className="text-2xl font-bold dark:text-slate-900 text-white">{currentMonth}</h2>
+        <h2 className="text-2xl font-bold text-slate-900 dark:text-white">{currentMonth}</h2>
         <div className="space-x-2">
-          <button className="px-3 py-1 dark:bg-slate-200 bg-slate-700 rounded">←</button>
-          <button className="px-3 py-1 dark:bg-slate-200 bg-slate-700 rounded">→</button>
+          <button onClick={() => setMonthOffset((prev) => prev - 1)} className="px-3 py-1 bg-slate-200 dark:bg-slate-700 rounded">←</button>
+          <button onClick={() => setMonthOffset((prev) => prev + 1)} className="px-3 py-1 bg-slate-200 dark:bg-slate-700 rounded">→</button>
         </div>
       </header>
 
-      <div className="grid grid-cols-7 mb-1 text-center text-sm font-medium text-slate-200 dark:text-slate-700">
+      {/* Días de la semana */}
+      <div className="grid grid-cols-7 mb-1 text-center text-sm font-medium text-slate-500 dark:text-slate-400">
         {['Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb', 'Dom'].map((dia, idx) => (
           <div key={idx}>{dia}</div>
         ))}
       </div>
 
+      {/* Celdas del mes */}
       <div className="grid grid-cols-7 gap-px bg-slate-200 dark:bg-slate-700 rounded overflow-hidden">
         {daysMatrix.flat().map((day, idx) => (
           <div
@@ -78,12 +93,11 @@ export default function CalendarPage() {
         ))}
       </div>
 
+      {/* Modal */}
       {selectedDay && (
         <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50">
           <div className="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-xl max-w-sm w-full">
-            <h3 className="text-lg font-bold mb-2 text-slate-700 dark:text-slate-200">
-              Eventos del día {selectedDay.date}
-            </h3>
+            <h3 className="text-lg font-bold mb-2">Eventos del día {selectedDay.date}</h3>
             {selectedDay.events.length === 0 ? (
               <p className="text-sm text-slate-500">No hay eventos</p>
             ) : (
@@ -101,7 +115,7 @@ export default function CalendarPage() {
             )}
             <button
               onClick={() => setSelectedDay(null)}
-              className="mt-4 px-3 py-1 dark:bg-slate-300 bg-slate-700 rounded"
+              className="mt-4 px-3 py-1 bg-slate-300 dark:bg-slate-700 rounded"
             >
               Cerrar
             </button>
