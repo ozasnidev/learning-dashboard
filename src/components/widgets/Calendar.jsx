@@ -53,7 +53,7 @@ export default function CalendarPage() {
   const { currentMonth, daysMatrix } = getMonthMatrix(shownDate.getFullYear(), shownDate.getMonth());
 
   return (
-    <section className="max-w-6xl mx-auto">
+    <section className="max-w-8xl mx-auto">
       {/* Encabezado de mes */}
       <header className="flex justify-between items-center mb-6">
         <h2 className="text-2xl font-bold dark:text-slate-900 text-white">{currentMonth}</h2>
@@ -64,7 +64,7 @@ export default function CalendarPage() {
       </header>
 
       {/* Días de la semana */}
-      <div className="grid grid-cols-7 mb-1 text-center text-sm font-medium text-slate-500 dark:text-slate-400">
+      <div className="grid grid-cols-7 mb-1 text-center text-sm font-medium text-slate-300 dark:text-slate-600">
         {['Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb', 'Dom'].map((dia, idx) => (
           <div key={idx}>{dia}</div>
         ))}
