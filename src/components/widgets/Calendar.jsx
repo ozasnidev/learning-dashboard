@@ -41,16 +41,16 @@ export default function CalendarPage() {
   const [selectedDay, setSelectedDay] = useState(null);
 
   return (
-    <section className="max-w-6xl mx-auto ">
+    <section className="max-w-8xl mx-auto ">
       <header className="flex justify-between items-center mb-6">
-        <h2 className="text-2xl font-bold text-slate-900 dark:text-white">{currentMonth}</h2>
+        <h2 className="text-2xl font-bold dark:text-slate-900 text-white">{currentMonth}</h2>
         <div className="space-x-2">
-          <button className="px-3 py-1 bg-slate-200 dark:bg-slate-700 rounded">←</button>
-          <button className="px-3 py-1 bg-slate-200 dark:bg-slate-700 rounded">→</button>
+          <button className="px-3 py-1 dark:bg-slate-200 bg-slate-700 rounded">←</button>
+          <button className="px-3 py-1 dark:bg-slate-200 bg-slate-700 rounded">→</button>
         </div>
       </header>
 
-      <div className="grid grid-cols-7 mb-1 text-center text-sm font-medium text-slate-500 dark:text-slate-400">
+      <div className="grid grid-cols-7 mb-1 text-center text-sm font-medium text-slate-200 dark:text-slate-700">
         {['Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb', 'Dom'].map((dia, idx) => (
           <div key={idx}>{dia}</div>
         ))}
@@ -81,7 +81,7 @@ export default function CalendarPage() {
       {selectedDay && (
         <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50">
           <div className="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-xl max-w-sm w-full">
-            <h3 className="text-lg font-bold mb-2">
+            <h3 className="text-lg font-bold mb-2 text-slate-700 dark:text-slate-200">
               Eventos del día {selectedDay.date}
             </h3>
             {selectedDay.events.length === 0 ? (
@@ -101,7 +101,7 @@ export default function CalendarPage() {
             )}
             <button
               onClick={() => setSelectedDay(null)}
-              className="mt-4 px-3 py-1 bg-slate-300 dark:bg-slate-700 rounded"
+              className="mt-4 px-3 py-1 dark:bg-slate-300 bg-slate-700 rounded"
             >
               Cerrar
             </button>
