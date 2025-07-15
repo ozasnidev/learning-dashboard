@@ -53,13 +53,13 @@ export default function CalendarPage() {
   const { currentMonth, daysMatrix } = getMonthMatrix(shownDate.getFullYear(), shownDate.getMonth());
 
   return (
-    <section className="max-w-6xl mx-auto px-4 py-10">
+    <section className="max-w-6xl mx-auto">
       {/* Encabezado de mes */}
       <header className="flex justify-between items-center mb-6">
-        <h2 className="text-2xl font-bold text-slate-900 dark:text-white">{currentMonth}</h2>
+        <h2 className="text-2xl font-bold dark:text-slate-900 text-white">{currentMonth}</h2>
         <div className="space-x-2">
-          <button onClick={() => setMonthOffset((prev) => prev - 1)} className="px-3 py-1 bg-slate-200 dark:bg-slate-700 rounded">←</button>
-          <button onClick={() => setMonthOffset((prev) => prev + 1)} className="px-3 py-1 bg-slate-200 dark:bg-slate-700 rounded">→</button>
+          <button onClick={() => setMonthOffset((prev) => prev - 1)} className="px-3 py-1 dark:bg-slate-200 bg-slate-700 rounded">←</button>
+          <button onClick={() => setMonthOffset((prev) => prev + 1)} className="px-3 py-1 dark:bg-slate-200 bg-slate-700 rounded">→</button>
         </div>
       </header>
 
@@ -71,13 +71,13 @@ export default function CalendarPage() {
       </div>
 
       {/* Celdas del mes */}
-      <div className="grid grid-cols-7 gap-px bg-slate-200 dark:bg-slate-700 rounded overflow-hidden">
+      <div className="grid grid-cols-7 gap-px h-[600px] bg-slate-200 dark:bg-slate-700 rounded overflow-hidden">
         {daysMatrix.flat().map((day, idx) => (
           <div
             key={`${day.date}-${idx}`}
             onClick={() => setSelectedDay(day)}
             className={`bg-white dark:bg-slate-900 cursor-pointer hover:ring-2 ring-blue-400 transition
-              min-h-[100px] p-2 relative text-slate-800 dark:text-white ${day.current ? '' : 'opacity-50'}`}
+              min-h-[100px] h-full p-2 relative text-slate-800 dark:text-white ${day.current ? '' : 'opacity-50'}`}
           >
             <span className="absolute top-2 right-2 text-xs font-bold">{day.date}</span>
             {day.events.map((ev, i) => (
@@ -96,7 +96,7 @@ export default function CalendarPage() {
       {/* Modal */}
       {selectedDay && (
         <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50">
-          <div className="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-xl max-w-sm w-full">
+          <div className="dark:bg-white bg-slate-800 p-6 rounded-xl shadow-xl max-w-sm w-full">
             <h3 className="text-lg font-bold mb-2">Eventos del día {selectedDay.date}</h3>
             {selectedDay.events.length === 0 ? (
               <p className="text-sm text-slate-500">No hay eventos</p>
@@ -115,7 +115,7 @@ export default function CalendarPage() {
             )}
             <button
               onClick={() => setSelectedDay(null)}
-              className="mt-4 px-3 py-1 bg-slate-300 dark:bg-slate-700 rounded"
+              className="mt-4 px-3 py-1 dark:bg-slate-300 bg-slate-700 rounded"
             >
               Cerrar
             </button>
