@@ -1,41 +1,83 @@
 ---
 import weeklyData from '../../data/weeklyPogress.json';
 
-function getColor(tasks: { done: boolean; title: string }[]) {
-  if (tasks.length === 0) return 'bg-gray-400'; // Sin tareas
+function getColor(tasks: { done: boolean }[]): string {
+  if (tasks.length === 0) return 'bg-gray-400';
   const allDone = tasks.every((t) => t.done);
   return allDone ? 'bg-green-500' : 'bg-orange-400';
 }
-
-function getStats(tasks: { done: boolean; title: string }[]) {
-  return `${tasks.filter(t => t.done).length}/${tasks.length}`;
-}
 ---
+<!-- Cliente: script activo para modales -->
+<script type="module">
+  window.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('[data-modal-open]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const id = btn.getAttribute('data-modal-open');
+        const modal = document.getElementById(id);
+        if (modal instanceof HTMLDialogElement) modal.showModal();
+      });
+    });
 
-<!-- Contenedor timeline -->
+    document.querySelectorAll('[data-modal-close]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const id = btn.getAttribute('data-modal-close');
+        const modal = document.getElementById(id);
+        if (modal instanceof HTMLDialogElement) modal.close();
+      });
+    });
+  });
+</script>
+
 <div class="grid grid-cols-[repeat(13,_1fr)] w-full px-4 py-10 items-center">
   {weeklyData.map((entry, index) => (
     <>
       <!-- Nodo -->
       <div class="relative group flex flex-col items-center col-span-1 text-center">
-        <div class={`w-5 h-5 md:w-14 md:h-14 text-xs md:text-sm rounded-full flex items-center justify-center text-white font-bold ${getColor(entry.tasks)}`}>
+        <button
+          class={`w-5 h-5 md:w-14 md:h-14 text-xs md:text-sm rounded-full flex items-center justify-center text-white font-bold ${getColor(entry.tasks)}`}
+          data-modal-open={`modal-${index}`}
+        >
           {entry.day.charAt(0)}
-        </div>
+        </button>
 
-        <!-- Tooltip -->
-        <div class="absolute -top-32 left-1/2 -translate-x-1/2 bg-white dark:bg-gray-800 shadow-xl rounded-lg px-4 py-3 opacity-0 group-hover:opacity-100 transition z-30 w-[220px] text-left">
+        <!-- Tooltip (solo escritorio) -->
+        <div class="hidden md:block absolute -top-32 left-1/2 -translate-x-1/2 bg-white dark:bg-gray-800 shadow-xl rounded-lg px-4 py-3 opacity-0 group-hover:opacity-100 transition z-30 w-[220px] text-left">
           <p class="font-semibold text-gray-800 mb-2">{entry.day}</p>
           <ul class="space-y-1 text-sm">
             {entry.tasks.length > 0
               ? entry.tasks.map(task => (
-                
-                  <li class={task.done ? "text-green-600" : "text-orange-500"}>
+                  <li class={task.done ? 'text-green-600' : 'text-orange-500'}>
                     {task.done ? '✅' : '⚠️'} {task.title}
                   </li>
                 ))
               : <li class="text-gray-500">Sin tareas asignadas</li>}
           </ul>
         </div>
+
+        <!-- Modal (responsive) -->
+        <dialog
+          id={`modal-${index}`}
+          class="md:hidden rounded-xl backdrop:bg-black/40 p-4 w-[90%] max-w-sm mx-auto z-50 shadow-xl transition-all duration-300 ease-out opacity-0 open:opacity-100 scale-95 open:scale-100"
+        >
+          <div class="flex justify-between items-center mb-3">
+            <h3 class="font-bold text-lg">{entry.day}</h3>
+            <button
+              class="text-gray-500 hover:text-red-600 text-xl px-2 leading-none"
+              data-modal-close={`modal-${index}`}
+            >
+              ×
+            </button>
+          </div>
+          <ul class="space-y-2 text-sm">
+            {entry.tasks.length > 0
+              ? entry.tasks.map(task => (
+                  <li class={task.done ? 'text-green-600' : 'text-orange-500'}>
+                    {task.done ? '✅' : '⚠️'} {task.title}
+                  </li>
+                ))
+              : <li class="text-gray-500">Sin tareas asignadas</li>}
+          </ul>
+        </dialog>
       </div>
 
       <!-- Conector -->
@@ -45,7 +87,3 @@ function getStats(tasks: { done: boolean; title: string }[]) {
     </>
   ))}
 </div>
-
-
-
-
