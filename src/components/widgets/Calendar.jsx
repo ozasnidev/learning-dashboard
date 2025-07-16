@@ -61,7 +61,7 @@ export default function CalendarPage() {
 }
 
   return (
-    <section className="max-w-8xl mx-auto">
+    <section className="max-w-6xl mx-auto">
       {/* Encabezado de mes */}
       <header className="flex justify-between items-center mb-6">
         <h2 className="text-2xl font-bold dark:text-slate-900 text-white">{currentMonth}</h2>
@@ -86,7 +86,7 @@ export default function CalendarPage() {
             onClick={() =>{ if (!day.current) return; if(day.isSunday){ triggerToast(); return;} setSelectedDay(day) }}
             className={`flex flex-col justify-between bg-white dark:bg-slate-900 ring-blue-400 transition
                 min-h-[100px] h-full p-2 relative text-slate-800 dark:text-white
-                ${day.isSunday ? 'bg-red-100' : 'bg-white dark:bg-slate-900'}
+                ${day.isSunday ? 'bg-red-100 dark:bg-[#330302]' : 'bg-white dark:bg-slate-900'}
                 ${day.current ? 'hover:ring-2 ring-blue-400' : ''}
                 ${day.current ? '' : 'opacity-50'} 
                 ${day.current ? 'cursor-pointer' : 'cursor-not-allowed'}`}
@@ -144,12 +144,15 @@ export default function CalendarPage() {
           </div>
         </div>
       )}
+      {/* toast Domingo */}
       {showToast && (
-        <div className="fixed bottom-6 left-1/2 -translate-x-1/2 bg-red-600 dark:bg-red-900 text-white px-4 py-2 rounded shadow-lg 
-            animate-slide-up text-sm z-50">
+        <div className="fixed bottom-6 inset-x-0 flex justify-center z-50">
+            <div className="bg-red-600 dark:bg-[#330302] text-white px-4 py-2 rounded shadow-lg
+            animate-slide-up text-sm text-center w-[90%] max-w-xs">
             El domingo no es día de actividad. No se puede registrar evento.
+            </div>
         </div>
-    )}
+     )}
     </section>
-  );
+    );
 }
