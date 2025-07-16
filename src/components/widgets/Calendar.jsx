@@ -75,9 +75,10 @@ export default function CalendarPage() {
         {daysMatrix.flat().map((day, idx) => (
           <div
             key={`${day.date}-${idx}`}
-            onClick={() => setSelectedDay(day)}
-            className={`flex flex-col justify-between bg-white dark:bg-slate-900 cursor-pointer hover:ring-2 ring-blue-400 transition
-                min-h-[100px] h-full p-2 relative text-slate-800 dark:text-white ${day.current ? '' : 'opacity-50'}`}
+            onClick={() =>{ if (!day.current) return; else setSelectedDay(day) }}
+            className={`flex flex-col justify-between bg-white dark:bg-slate-900 ring-blue-400 transition
+                min-h-[100px] h-full p-2 relative text-slate-800 dark:text-white ${day.current ? 'hover:ring-2 ring-blue-400' : ''}
+                ${day.current ? '' : 'opacity-50'} ${day.current ? 'cursor-pointer' : 'cursor-not-allowed'}`}
             >
             {/* Número del día */}
                 <div className="text-right text-xs font-bold">{day.date}</div>
