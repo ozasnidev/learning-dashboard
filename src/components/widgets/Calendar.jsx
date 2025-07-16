@@ -50,18 +50,40 @@ export default function CalendarPage() {
   const [monthOffset, setMonthOffset] = useState(0);
   const [selectedDay, setSelectedDay] = useState(null);
   const [showToast, setShowToast] = useState(false);
+  const [toastClicks, setToastClicks] = useState(0);
+  const [toastAnimation, setToastAnimation] = useState('');
 
   const baseDate = new Date(2025, 6); // Julio 2025
   const shownDate = new Date(baseDate.getFullYear(), baseDate.getMonth() + monthOffset);
   const { currentMonth, daysMatrix } = getMonthMatrix(shownDate.getFullYear(), shownDate.getMonth());
 
   function triggerToast() {
+  const nextClicks = toastClicks + 1;
+  setToastClicks(nextClicks);
   setShowToast(true);
-  setTimeout(() => setShowToast(false), 3000); // se oculta tras 3 seg
+
+  if (nextClicks === 1) {
+        setToastAnimation('animate-slide-up');
+    } else {
+        setToastAnimation('animate-shake');
+    }
+
+  // Ocultar después de animar
+    setTimeout(() => {
+        setToastAnimation('animate-slide-down');
+        // Espera la duración real de la animación
+        setTimeout(() => {
+        setShowToast(false);
+        setToastClicks(0);
+        setToastAnimation(''); // Limpia la clase
+        }, 400);
+    }, 3000);
 }
 
+
+
   return (
-    <section className="max-w-6xl mx-auto">
+    <section className="max-w-8xl mx-auto">
       {/* Encabezado de mes */}
       <header className="flex justify-between items-center mb-6">
         <h2 className="text-2xl font-bold dark:text-slate-900 text-white">{currentMonth}</h2>
@@ -143,16 +165,19 @@ export default function CalendarPage() {
             </button>
           </div>
         </div>
-      )}
-      {/* toast Domingo */}
-      {showToast && (
-        <div className="fixed bottom-6 inset-x-0 flex justify-center z-50">
-            <div className="bg-red-600 dark:bg-[#330302] text-white px-4 py-2 rounded shadow-lg
-            animate-slide-up text-sm text-center w-[90%] max-w-xs">
+         )}
+        {/* toast Domingo */}
+        {showToast && (
+        <div className="fixed bottom-6 inset-x-0 z-50 flex justify-center pointer-events-none">
+            <div
+                className={`pointer-events-auto bg-red-600 dark:bg-[#330302] text-white px-4 py-2 rounded shadow-lg 
+                    text-sm text-center w-[90%] max-w-xs ${toastAnimation}`}
+            >
             El domingo no es día de actividad. No se puede registrar evento.
             </div>
         </div>
-     )}
+        )}
+
     </section>
     );
 }
