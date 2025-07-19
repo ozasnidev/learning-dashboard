@@ -76,11 +76,9 @@ export default function CalendarPage() {
         setShowToast(false);
         setToastClicks(0);
         setToastAnimation(''); // Limpia la clase
-        }, 400);
+        }, 3000);
     }, 3000);
 }
-
-
 
   return (
     <section className="max-w-8xl mx-auto">
