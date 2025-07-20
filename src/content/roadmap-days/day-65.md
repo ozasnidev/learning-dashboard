@@ -6,7 +6,7 @@ block: "Frontend con Blazor – WebAssembly, SSR y SignalR"
 section: "Tiempo real con SignalR"
 topics:
   - ¿Qué es SignalR?
-  - `HubConnection` en Blazor
+  - HubConnection en Blazor
   - Eventos en tiempo real
 resources:
   - { type: "lectura", url: "https://learn.microsoft.com/es-es/aspnet/core/blazor/tutorials/signalr-blazor?view=aspnetcore-9.0" }

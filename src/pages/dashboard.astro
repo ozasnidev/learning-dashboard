@@ -1,0 +1,34 @@
+---
+// src/pages/dashboard.astro
+import { getCollection } from "astro:content"
+
+const days = await getCollection("roadmap-days")
+const sorted = days.sort(
+  (
+    a: { data: { day: number; title: string; block: string; section: string; topics: string[]; practice: string } },
+    b: { data: { day: number; title: string; block: string; section: string; topics: string[]; practice: string } }
+  ) => a.data.day - b.data.day
+)
+---
+
+<html>
+  <body class="bg-gray-900 text-white">
+    <main class="max-w-6xl mx-auto p-4">
+      <h1 class="text-4xl font-bold mb-6">📚 Roadmap Técnico</h1>
+
+      {sorted.map((item: { data: { day: number; title: string; block: string; section: string; topics: string[]; practice: string } }) => {
+        const { data } = item;
+        return (
+          <div class="bg-gray-800 rounded-lg p-4 mb-4 hover:bg-gray-700 transition">
+            <h2 class="text-xl font-semibold">Día {data.day}: {data.title}</h2>
+            <p class="mt-2 text-sm text-gray-300">{data.block} – {data.section}</p>
+            <ul class="mt-2 list-disc list-inside">
+              {data.topics.map(topic => <li>{topic}</li>)}
+            </ul>
+            <p class="mt-2"><strong>🛠 Práctica:</strong> {data.practice}</p>
+          </div>
+        );
+      })}
+    </main>
+  </body>
+</html>

@@ -6,7 +6,7 @@ block: "Profundización en ASP.NET Core y Middleware"
 section: "Servicios y DI"
 topics:
   - ¿Qué es la inyección de dependencias?
-  - `AddTransient`, `AddScoped`, `AddSingleton`
+  - "AddTransient, AddScoped, AddSingleton"
   - Registrar y consumir servicios en middleware
 resources:
   - { type: "video", url: "https://www.youtube.com/watch?v=NJHUThq0bnA" }

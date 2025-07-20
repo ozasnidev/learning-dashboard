@@ -5,7 +5,7 @@ day: 77
 block: "Frontend con React.js avanzado"
 section: "Pruebas de UI"
 topics:
-  - `vitest` y `@testing-library/react`
+  - vitest y @testing-library/react
   - Renderizado, eventos y assertions
   - Mocks y pruebas de integración
 resources:

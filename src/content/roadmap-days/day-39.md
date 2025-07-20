@@ -6,7 +6,7 @@ block: "Seguridad – Autenticación y Autorización"
 section: "Autenticación con tokens"
 topics:
   - ¿Qué es JWT?
-  - `AddJwtBearer` y validación de tokens
+  - "AddJwtBearer y validación de tokens"
   - Claims y expiración
 resources:
   - { type: "lectura", url: "https://learn.microsoft.com/es-es/aspnet/core/security/authentication/jwt-authn" }

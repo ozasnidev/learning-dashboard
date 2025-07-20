@@ -7,7 +7,7 @@ section: "Multimodalidad avanzada"
 topics:
   - ¿Qué es IA multimodal?
   - Modelos como GPT-4o, Gemini, Claude 3
-  - Entrada combinada: texto + imagen + audio
+  - Entrada combinada (texto + imagen + audio)
 resources:
   - { type: "video", url: "https://www.youtube.com/watch?v=VAP2ARHkbe4" }
   - { type: "lectura", url: "https://learn.microsoft.com/en-us/azure/ai-services/" }

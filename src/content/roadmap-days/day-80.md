@@ -5,8 +5,8 @@ day: 80
 block: "CSS moderno y Tailwind CSS a fondo"
 section: "Layout avanzado"
 topics:
-  - Flexbox: alineación, distribución, orden
-  - Grid: áreas, fracciones, repeat
+  - Flexbox (alineación, distribución, orden)
+  - Grid (áreas, fracciones, repeat)
   - Responsive sin media queries
 resources:
   - { type: "video", url: "https://www.youtube.com/watch?v=phWxA89Dy94" }

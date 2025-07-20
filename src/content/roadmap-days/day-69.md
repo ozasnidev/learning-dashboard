@@ -5,8 +5,8 @@ day: 69
 block: "Frontend con React.js a fondo"
 section: "Hooks y efectos"
 topics:
-  - `useEffect` y ciclo de vida
-  - `useRef`, `useMemo`, `useCallback`
+  - useEffect y ciclo de vida
+  - useRef, useMemo, useCallback
   - Limpieza de efectos
 resources:
   - { type: "video", url: "https://www.youtube.com/watch?v=82PXenL4MGg&t=10257s" }

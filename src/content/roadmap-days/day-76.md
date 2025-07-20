@@ -5,8 +5,8 @@ day: 76
 block: "Frontend con React.js avanzado"
 section: "Formularios y UX"
 topics:
-  - `react-hook-form` y `Controller`
-  - Validación con `zod` o `yup`
+  - react-hook-form y Controller
+  - Validación con zod o yup
   - Formularios dinámicos y reutilizables
 resources:
   - { type: "video", url: "https://www.youtube.com/watch?v=82PXenL4MGg&t=3373s" }

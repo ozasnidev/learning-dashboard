@@ -5,7 +5,7 @@ day: 35
 block: "Profundización en ASP.NET Core y Middleware"
 section: "Condiciones y entornos"
 topics:
-  - `app.UseWhen()` y `MapWhen()`
+  - "app.UseWhen() y MapWhen()"
   - Middleware por entorno (`Development`, `Production`)
   - Redirección condicional
 resources:

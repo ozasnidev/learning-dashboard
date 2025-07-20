@@ -5,7 +5,7 @@ day: 21
 block: "Persistencia de datos con EF Core (Parte 2) y optimización"
 section: "Performance y eficiencia"
 topics:
-  - `AsNoTracking`, paginación optimizada
+  - "AsNoTracking, paginación optimizada"
   - Consultas compiladas
   - Reducción de recorridos de red
 resources:

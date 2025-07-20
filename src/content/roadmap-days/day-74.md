@@ -5,7 +5,7 @@ day: 74
 block: "Frontend con React.js avanzado"
 section: "Data fetching inteligente"
 topics:
-  - `createApi` y `fetchBaseQuery`
+  - createApi y fetchBaseQuery
   - Endpoints: queries y mutations
   - Cacheo, invalidación y revalidación automática
 resources:

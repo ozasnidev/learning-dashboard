@@ -6,7 +6,7 @@ block: "Seguridad – Autenticación y Autorización"
 section: "Login social"
 topics:
   - OAuth y OpenID Connect
-  - `AddAuthentication().AddGoogle()`
+  - "AddAuthentication().AddGoogle()"
   - Configuración de credenciales externas
 resources:
   - { type: "lectura", url: "https://learn.microsoft.com/es-es/aspnet/core/security/authentication/social/google-logins" }

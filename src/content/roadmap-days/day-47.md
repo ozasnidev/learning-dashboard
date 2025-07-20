@@ -6,7 +6,7 @@ block: "Testing, logging y calidad de código"
 section: "Cobertura y métricas"
 topics:
   - ¿Qué es la cobertura de código?
-  - Herramientas: Coverlet, ReportGenerator
+  - Coverlet, ReportGenerator
   - Métricas de calidad y refactorización
 resources:
   - { type: "lectura", url: "https://learn.microsoft.com/es-es/dotnet/core/testing/unit-testing-code-coverage" }

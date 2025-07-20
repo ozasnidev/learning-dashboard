@@ -5,8 +5,8 @@ day: 70
 block: "Frontend con React.js a fondo"
 section: "Rutas y navegación"
 topics:
-  - `react-router-dom`
-  - `BrowserRouter`, `Routes`, `Link`, `useNavigate`
+  - react-router-dom
+  - BrowserRouter, Routes, Link, useNavigate
   - Rutas dinámicas y parámetros
 resources:
   - { type: "video", url: "https://www.youtube.com/watch?v=82PXenL4MGg&t=252s" }

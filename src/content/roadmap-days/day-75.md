@@ -5,8 +5,8 @@ day: 75
 block: "Frontend con React.js avanzado"
 section: "Estado compartido sin Redux"
 topics:
-  - `createContext`, `useContext`
-  - `useReducer` para lógica compleja
+  - createContext, useContext
+  - useReducer para lógica compleja
   - Comparativa con Redux Toolkit
 resources:
   - { type: "video", url: "https://www.youtube.com/watch?v=82PXenL4MGg&t=10257s" }

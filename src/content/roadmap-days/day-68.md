@@ -6,7 +6,7 @@ block: "Frontend con React.js a fondo"
 section: "Componentes dinámicos"
 topics:
   - Props y comunicación entre componentes
-  - `useState` y estado local
+  - useState y estado local
   - Renderizado condicional
 resources:
   - { type: "video", url: "https://www.youtube.com/watch?v=82PXenL4MGg&t=667s" }

@@ -5,7 +5,7 @@ day: 20
 block: "Persistencia de datos con EF Core (Parte 2) y optimización"
 section: "Técnicas de carga"
 topics:
-  - `Include` y `ThenInclude`
+  - "Include y ThenInclude"
   - Lazy Loading y configuración
   - Explicit Loading con `Entry().Collection().Load()`
 resources:

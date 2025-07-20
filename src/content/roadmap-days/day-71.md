@@ -5,7 +5,7 @@ day: 71
 block: "Frontend con React.js a fondo"
 section: "Datos externos"
 topics:
-  - `fetch` y `axios`
+  - fetch y axios
   - Manejo de loading y errores
   - Renderizado condicional según estado
 resources:

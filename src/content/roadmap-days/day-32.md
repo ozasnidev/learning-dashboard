@@ -7,7 +7,7 @@ section: "Tipos de middleware"
 topics:
   - Middleware integrado: logging, redirección, autenticación
   - Crear middleware personalizado
-  - `RequestDelegate` y `HttpContext`
+  - "RequestDelegate y HttpContext"
 resources:
   - { type: "video", url: "https://www.youtube.com/watch?v=2WZfAVdL_9g" }
   - { type: "lectura", url: "https://rafaelacosta.net/blog/2024/9/2/configuración-y-gestión-del-middleware-en-aspnet-core" }

@@ -6,7 +6,7 @@ block: "CSS moderno y Tailwind CSS a fondo"
 section: "Tailwind desde cero"
 topics:
   - Instalación con Vite y PostCSS
-  - `tailwind.config.js` y personalización
+  - tailwind.config.js y personalización
   - Responsive, dark mode y variantes
 resources:
   - { type: "video", url: "https://www.youtube.com/watch?v=h6xQCE6J1VQ" }

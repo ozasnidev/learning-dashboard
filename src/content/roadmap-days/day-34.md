@@ -5,7 +5,7 @@ day: 34
 block: "Profundización en ASP.NET Core y Middleware"
 section: "Startup y orden de ejecución"
 topics:
-  - `ConfigureServices` vs `Configure`
+  - "ConfigureServices vs Configure"
   - Orden de `UseRouting`, `UseAuthentication`, `UseAuthorization`
   - Impacto del orden en el comportamiento
 resources:

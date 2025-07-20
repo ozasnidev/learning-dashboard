@@ -6,7 +6,7 @@ block: "Frontend con React.js avanzado"
 section: "Gestión de estado global"
 topics:
   - ¿Qué es Redux Toolkit?
-  - `configureStore`, `createSlice`, `createAsyncThunk`
+  - configureStore, createSlice, createAsyncThunk
   - Integración con React (`Provider`, `useSelector`, `useDispatch`)
 resources:
   - { type: "video", url: "https://www.youtube.com/watch?v=_R5XOF_MDmU" }

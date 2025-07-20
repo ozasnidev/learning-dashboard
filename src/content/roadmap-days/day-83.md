@@ -5,8 +5,8 @@ day: 83
 block: "CSS moderno y Tailwind CSS a fondo"
 section: "Interacción visual"
 topics:
-  - `transition`, `transform`, `animation`
-  - Tailwind plugins: `@tailwindcss/forms`, `@tailwindcss/typography`
+  - transition, transform, animation
+  - Tailwind plugins (@tailwindcss/forms, @tailwindcss/typography
   - Hover, focus, active y pseudoclases
 resources:
   - { type: "video", url: "https://www.youtube.com/watch?v=h6xQCE6J1VQ&t=4200s" }

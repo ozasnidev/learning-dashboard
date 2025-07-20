@@ -7,7 +7,7 @@ section: "CSS base y arquitectura"
 topics:
   - Modelo de caja, selectores avanzados
   - BEM, SMACSS, ITCSS
-  - Variables CSS y `:root`
+  - Variables CSS y :root
 resources:
   - { type: "video", url: "https://www.youtube.com/watch?v=1Rs2ND1ryYc" }
   - { type: "lectura", url: "https://css-tricks.com/what-does-a-modern-css-reset-look-like/" }

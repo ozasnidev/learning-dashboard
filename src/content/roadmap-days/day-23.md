@@ -5,7 +5,7 @@ day: 23
 block: "Persistencia de datos con EF Core (Parte 2) y optimización"
 section: "SQL directo y SPs"
 topics:
-  - `FromSqlRaw` y `FromSqlInterpolated`
+  - "FromSqlRaw y FromSqlInterpolated"
   - Llamadas a procedimientos almacenados
   - Seguridad y parámetros
 resources:

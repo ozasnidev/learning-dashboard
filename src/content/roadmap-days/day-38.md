@@ -5,7 +5,7 @@ day: 38
 block: "Seguridad – Autenticación y Autorización"
 section: "Autenticación con cookies"
 topics:
-  - `AddAuthentication` y `UseAuthentication`
+  - "AddAuthentication y UseAuthentication"
   - Esquemas de autenticación
   - Cookies seguras y persistencia
 resources:

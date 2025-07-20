@@ -5,7 +5,7 @@ day: 64
 block: "Frontend con Blazor – WebAssembly, SSR y SignalR"
 section: "Consumo de APIs"
 topics:
-  - `HttpClient` en Blazor
+  - HttpClient en Blazor
   - Inyección de dependencias
   - Manejo de respuestas y errores
 resources:

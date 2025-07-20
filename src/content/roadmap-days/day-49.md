@@ -6,7 +6,7 @@ block: "Arquitectura limpia y patrones de diseño"
 section: "Principios y capas"
 topics:
   - ¿Qué es Clean Architecture?
-  - Separación de capas: dominio, aplicación, infraestructura
+  - Separación de capas (dominio, aplicación, infraestructura)
   - Independencia de frameworks y UI
 resources:
   - { type: "video", url: "https://www.youtube.com/watch?v=JH94hflsdos" }

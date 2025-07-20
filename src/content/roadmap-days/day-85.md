@@ -7,7 +7,7 @@ section: "Fundamentos y tipos de IA"
 topics:
   - IA generativa vs predictiva
   - LLMs, embeddings, transformers
-  - Modelos: GPT, Gemini, Claude, Phi-3
+  - Modelos (GPT, Gemini, Claude, Phi-3)
 resources:
   - { type: "video", url: "https://www.youtube.com/watch?v=VAP2ARHkbe4" }
   - { type: "lectura", url: "https://learn.microsoft.com/es-es/dotnet/ai/overview" }

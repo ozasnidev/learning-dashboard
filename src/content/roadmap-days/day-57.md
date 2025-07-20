@@ -5,7 +5,7 @@ day: 57
 block: "Integración continua, despliegue y DevOps básico"
 section: "Integración continua real"
 topics:
-  - YAML básico: stages, jobs, steps
+  - YAML básico (stages, jobs, steps)
   - Restaurar, compilar y testear
   - Variables y triggers
 resources:

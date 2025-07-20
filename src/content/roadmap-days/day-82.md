@@ -5,8 +5,8 @@ day: 82
 block: "CSS moderno y Tailwind CSS a fondo"
 section: "Componentes y diseño adaptativo"
 topics:
-  - Componentes reutilizables (`@apply`)
-  - Breakpoints (`sm`, `md`, `lg`, `xl`)
+  - Componentes reutilizables (@apply)
+  - Breakpoints (sm, md, lg, xl)
   - Dark mode y clases condicionales
 resources:
   - { type: "video", url: "https://www.youtube.com/watch?v=h6xQCE6J1VQ&t=3600s" }
