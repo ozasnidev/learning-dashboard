@@ -1,4 +1,5 @@
 ---
+id: "w15-d3"
 title: "Integración de IA en JavaScript y frontend"
 date: ""
 day: 87

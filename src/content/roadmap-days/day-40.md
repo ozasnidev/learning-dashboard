@@ -1,4 +1,5 @@
 ---
+id: "w7-d4"
 title: "Autorización basada en roles y claims"
 date: ""
 day: 40

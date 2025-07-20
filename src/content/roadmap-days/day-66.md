@@ -1,4 +1,5 @@
 ---
+id: "w11-d6"
 title: "Proyecto semanal – SPA con WebAssembly, SSR y SignalR"
 date: ""
 day: 66

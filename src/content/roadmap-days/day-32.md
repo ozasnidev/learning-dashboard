@@ -1,4 +1,5 @@
 ---
+id: "w6-d2"
 title: "Middleware integrado y personalizado"
 date: ""
 day: 32

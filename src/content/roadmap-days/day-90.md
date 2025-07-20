@@ -1,4 +1,5 @@
 ---
+id: "w15-d6"
 title: "Proyecto semanal – Asistente inteligente con IA integrada"
 date: ""
 day: 90

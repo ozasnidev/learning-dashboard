@@ -1,4 +1,5 @@
 ---
+id: "w6-d1"
 title: "Middleware en ASP.NET Core – Fundamentos"
 date: ""
 day: 31

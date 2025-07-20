@@ -1,4 +1,5 @@
 ---
+id: "w2-d2"
 title: "Controladores y acciones"
 date: ""
 day: 8

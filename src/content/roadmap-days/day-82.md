@@ -1,4 +1,5 @@
 ---
+id: "w14-d4"
 title: "Componentes, diseño responsivo y dark mode con Tailwind"
 date: ""
 day: 82

@@ -1,4 +1,5 @@
 ---
+id: "w4-d2"
 title: "Carga de datos: Eager, Lazy y Explicit"
 date: ""
 day: 20

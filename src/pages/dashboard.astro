@@ -3,6 +3,8 @@ import Header from '../components/layout/Header.astro';
 import SidebarToggle from '../components/ui/SidebarToggle';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { WeekCard } from '../components/ui/WeekCard.jsx';
+
+const days = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
 ---
 
 <BaseLayout title="Dashboard | Inicio">
@@ -13,5 +15,5 @@ import { WeekCard } from '../components/ui/WeekCard.jsx';
   <Header class="animate-fade-in" />
   
   <div class="p-4 space-y-4">
-    <WeekCard title="Semana 1" days={["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sabado"]} />
+    <WeekCard title="Semana 1" days={days} />
   </div>

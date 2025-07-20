@@ -1,4 +1,5 @@
 ---
+id: "w9-d2"
 title: "Patrones de diseño esenciales en .NET"
 date: ""
 day: 50

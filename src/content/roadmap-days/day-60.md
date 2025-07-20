@@ -1,4 +1,5 @@
 ---
+id: "w10-d6"
 title: "Proyecto semanal – CI/CD completo con Azure DevOps"
 date: ""
 day: 60

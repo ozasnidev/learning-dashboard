@@ -1,4 +1,5 @@
 ---
+id: "w11-d4"
 title: "Integración con APIs REST desde Blazor"
 date: ""
 day: 64

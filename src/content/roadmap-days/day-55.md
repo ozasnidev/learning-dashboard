@@ -1,4 +1,5 @@
 ---
+id: "w10-d1"
 title: "Fundamentos de DevOps y CI/CD"
 date: ""
 day: 55

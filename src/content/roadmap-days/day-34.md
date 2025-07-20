@@ -1,4 +1,5 @@
 ---
+id: "w6-d4"
 title: "Configuración del pipeline en Startup.cs"
 date: ""
 day: 34

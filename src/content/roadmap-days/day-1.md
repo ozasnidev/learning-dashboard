@@ -1,4 +1,5 @@
 ---
+id: "w1-d1"
 title: "Fundamentos C# – Día 1"
 date: ""
 day: 1

@@ -1,4 +1,5 @@
 ---
+id: "w11-d2"
 title: "Blazor Server y SSR – Renderizado en el servidor"
 date: ""
 day: 62

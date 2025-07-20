@@ -1,4 +1,5 @@
 ---
+id: "w12-d6"
 title: "Proyecto semanal – SPA React con rutas y API"
 date: ""
 day: 72

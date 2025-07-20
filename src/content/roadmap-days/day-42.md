@@ -1,4 +1,5 @@
 ---
+id: "w7-d6"
 title: "Proyecto semanal – Sistema de autenticación completo"
 date: ""
 day: 42

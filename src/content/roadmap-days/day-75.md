@@ -1,4 +1,5 @@
 ---
+id: "w12-d3"
 title: "Context API y useReducer – Alternativas a Redux"
 date: ""
 day: 75

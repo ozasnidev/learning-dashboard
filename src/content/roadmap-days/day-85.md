@@ -1,4 +1,5 @@
 ---
+id: "w15-d1"
 title: "Fundamentos de IA moderna y modelos generativos"
 date: ""
 day: 85

@@ -1,4 +1,5 @@
 ---
+id: "w3-d4"
 title: "Configuración avanzada de entidades"
 date: ""
 day: 16

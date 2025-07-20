@@ -1,4 +1,5 @@
 ---
+id: "w9-d4"
 title: "Domain Driven Design (DDD) – Parte 2"
 date: ""
 day: 52

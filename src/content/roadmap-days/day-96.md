@@ -1,4 +1,5 @@
 ---
+id: "w16-d6"
 title: "Proyecto semanal – Sistema RAG con agente local y fine-tuning"
 date: ""
 day: 96

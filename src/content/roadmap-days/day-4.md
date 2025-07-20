@@ -1,4 +1,5 @@
 ---
+id: "w1-d4"
 title: "Bucles y repetición – Día 4"
 date: ""
 day: 4

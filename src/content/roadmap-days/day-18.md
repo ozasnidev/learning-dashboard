@@ -1,4 +1,5 @@
 ---
+id: "w3-d6"
 title: "Proyecto semanal – Modelo relacional completo"
 date: ""
 day: 18

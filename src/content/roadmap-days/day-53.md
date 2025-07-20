@@ -1,4 +1,5 @@
 ---
+id: "w9-d5"
 title: "CQRS y separación de responsabilidades"
 date: ""
 day: 53

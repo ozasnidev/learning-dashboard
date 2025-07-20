@@ -1,4 +1,5 @@
 ---
+id: "w10-d4"
 title: "Pipeline CD – Despliegue automático"
 date: ""
 day: 58

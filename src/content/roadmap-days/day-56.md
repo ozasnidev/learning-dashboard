@@ -1,4 +1,5 @@
 ---
+id: "w10-d2"
 title: "Azure DevOps – Repositorios y pipelines"
 date: ""
 day: 56

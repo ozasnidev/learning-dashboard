@@ -1,4 +1,5 @@
 ---
+id: "w4-d3"
 title: "Optimización de rendimiento en EF Core"
 date: ""
 day: 21

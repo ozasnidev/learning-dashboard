@@ -1,4 +1,5 @@
 ---
+id: "w15-d2"
 title: "Integración de OpenAI en .NET Core"
 date: ""
 day: 86

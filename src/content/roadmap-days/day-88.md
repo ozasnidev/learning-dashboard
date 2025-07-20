@@ -1,4 +1,5 @@
 ---
+id: "w15-d4"
 title: "Semantic Kernel y agentes inteligentes en .NET"
 date: ""
 day: 88

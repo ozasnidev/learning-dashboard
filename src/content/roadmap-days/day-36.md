@@ -1,4 +1,5 @@
 ---
+id: "w6-d6"
 title: "Proyecto semanal – Pipeline completo con middleware personalizado"
 date: ""
 day: 36

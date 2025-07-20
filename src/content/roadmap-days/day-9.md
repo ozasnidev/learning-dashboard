@@ -1,4 +1,5 @@
 ---
+id: "w2-d3"
 title: "Vistas y Razor"
 date: ""
 day: 9

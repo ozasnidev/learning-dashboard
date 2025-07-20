@@ -1,4 +1,5 @@
 ---
+id: "w13-d6"
 title: "Proyecto semanal – SPA React avanzada con Redux y testing"
 date: ""
 day: 78

@@ -1,4 +1,5 @@
 ---
+id: "w11-d1"
 title: "Fundamentos de Blazor y WebAssembly"
 date: ""
 day: 61

@@ -1,4 +1,5 @@
 ---
+id: "w16-d1"
 title: "ML.NET – Machine Learning local en .NET"
 date: ""
 day: 91

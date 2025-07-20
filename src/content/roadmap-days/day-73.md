@@ -1,4 +1,5 @@
 ---
+id: "w13-d1"
 title: "Redux Toolkit – Estado global moderno"
 date: ""
 day: 73

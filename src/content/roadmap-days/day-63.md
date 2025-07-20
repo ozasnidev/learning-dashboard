@@ -1,4 +1,5 @@
 ---
+id: "w11-d3"
 title: "Componentes, eventos y binding en Blazor"
 date: ""
 day: 63

@@ -1,4 +1,5 @@
 ---
+id: "w3-d1"
 title: "Introducción a EF Core y configuración inicial"
 date: ""
 day: 13

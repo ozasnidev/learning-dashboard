@@ -1,4 +1,5 @@
 ---
+id: "w9-d6"
 title: "Proyecto semanal – App con arquitectura limpia y DDD"
 date: ""
 day: 54

@@ -1,4 +1,5 @@
 ---
+id: "w13-d2"
 title: "RTK Query – Consumo de APIs con cache y revalidación"
 date: ""
 day: 74

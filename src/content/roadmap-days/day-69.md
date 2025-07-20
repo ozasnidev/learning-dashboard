@@ -1,4 +1,5 @@
 ---
+id: "w12-d3"
 title: "Hooks avanzados y ciclo de vida"
 date: ""
 day: 69

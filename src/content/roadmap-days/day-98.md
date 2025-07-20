@@ -1,4 +1,5 @@
 ---
+id: "w17-d2"
 title: "Copilot Studio – Diseño de asistentes personalizados"
 date: ""
 day: 98

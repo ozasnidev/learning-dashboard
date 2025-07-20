@@ -1,4 +1,5 @@
 ---
+id: "w14-d6"
 title: "Proyecto semanal – Dashboard con Tailwind CSS pro"
 date: ""
 day: 84

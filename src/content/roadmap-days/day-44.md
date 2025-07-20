@@ -1,4 +1,5 @@
 ---
+id: "w8-d2"
 title: "xUnit y Moq – pruebas unitarias con dependencias"
 date: ""
 day: 44

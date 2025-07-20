@@ -1,4 +1,5 @@
 ---
+id: "w5-d6"
 title: "Proyecto semanal – API CRUD de Productos"
 date: ""
 day: 30

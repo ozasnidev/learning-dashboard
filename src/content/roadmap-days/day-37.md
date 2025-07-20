@@ -1,4 +1,5 @@
 ---
+id: "w7-d1"
 title: "Fundamentos de seguridad, autenticación y autorización"
 date: ""
 day: 37

@@ -1,4 +1,5 @@
 ---
+id: "w11-d5"
 title: "SignalR en Blazor – Comunicación en tiempo real"
 date: ""
 day: 65

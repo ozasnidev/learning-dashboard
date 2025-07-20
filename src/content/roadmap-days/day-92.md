@@ -1,4 +1,5 @@
 ---
+id: "w16-d2"
 title: "Fine-tuning de LLMs – Personalización profunda"
 date: ""
 day: 92

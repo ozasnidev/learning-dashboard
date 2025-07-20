@@ -1,4 +1,5 @@
 ---
+id: "w1-d6"
 title: "Proyecto Semanal – Día 6"
 date: ""
 day: 6

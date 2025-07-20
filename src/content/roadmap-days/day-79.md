@@ -1,4 +1,5 @@
 ---
+id: "w14-d1"
 title: "CSS moderno – Fundamentos y arquitectura escalable"
 date: ""
 day: 79

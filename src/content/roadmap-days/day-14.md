@@ -1,4 +1,5 @@
 ---
+id: "w3-d2"
 title: "Creación de entidades y DbContext"
 date: ""
 day: 14

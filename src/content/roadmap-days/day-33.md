@@ -1,4 +1,5 @@
 ---
+id: "w6-d3"
 title: "Inyección de dependencias y servicios"
 date: ""
 day: 33

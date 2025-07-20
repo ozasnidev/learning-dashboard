@@ -1,4 +1,5 @@
 ---
+id: "w2-d1"
 title: "Introducción a ASP.NET Core MVC"
 date: ""
 day: 7

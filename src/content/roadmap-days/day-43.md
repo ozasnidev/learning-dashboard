@@ -1,4 +1,5 @@
 ---
+id: "w8-d1"
 title: "Fundamentos de testing en .NET"
 date: ""
 day: 43

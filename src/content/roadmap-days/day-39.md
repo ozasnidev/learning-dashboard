@@ -1,4 +1,5 @@
 ---
+id: "w7-d3"
 title: "Autenticación con JWT y Bearer Tokens"
 date: ""
 day: 39

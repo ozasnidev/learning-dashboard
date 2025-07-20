@@ -1,4 +1,5 @@
 ---
+id: "w8-d4"
 title: "Testing de logging y trazabilidad"
 date: ""
 day: 46

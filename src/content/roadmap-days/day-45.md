@@ -1,4 +1,5 @@
 ---
+id: "w8-d3"
 title: "Logging en ASP.NET Core"
 date: ""
 day: 45

@@ -1,4 +1,5 @@
 ---
+id: "w10-d3"
 title: "Pipeline CI para ASP.NET Core"
 date: ""
 day: 57

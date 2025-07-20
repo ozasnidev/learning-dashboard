@@ -1,4 +1,5 @@
 ---
+id: "w16-d3"
 title: "RAG avanzado – Recuperación aumentada con agentes"
 date: ""
 day: 93

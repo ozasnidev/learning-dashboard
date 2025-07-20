@@ -1,4 +1,5 @@
 ---
+id: "w7-d2"
 title: "Autenticación con cookies y configuración básica"
 date: ""
 day: 38

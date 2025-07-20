@@ -1,4 +1,5 @@
 ---
+id: "w1-d2"
 title: "Tipos de datos y variables – Día 2"
 date: ""
 day: 2

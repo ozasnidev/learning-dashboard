@@ -1,4 +1,5 @@
 ---
+id: "w2-d6"
 title: "Proyecto semanal – MVC CRUD"
 date: ""
 day: 12

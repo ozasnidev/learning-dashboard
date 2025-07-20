@@ -1,4 +1,5 @@
 ---
+id: "w17-d1"
 title: "IA multimodal – texto, imagen, voz y contexto"
 date: ""
 day: 97

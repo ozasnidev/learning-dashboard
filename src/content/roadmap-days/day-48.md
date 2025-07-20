@@ -1,4 +1,5 @@
 ---
+id: "w8-d6"
 title: "Proyecto semanal – API con pruebas y logging"
 date: ""
 day: 48

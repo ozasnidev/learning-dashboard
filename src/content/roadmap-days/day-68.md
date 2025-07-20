@@ -1,4 +1,5 @@
 ---
+id: "w12-d2"
 title: "Componentes, props y estado"
 date: ""
 day: 68

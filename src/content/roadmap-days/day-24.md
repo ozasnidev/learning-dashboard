@@ -1,4 +1,5 @@
 ---
+id: "w4-d6"
 title: "Proyecto semanal – Optimización y consultas avanzadas"
 date: ""
 day: 24
