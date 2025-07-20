@@ -35,6 +35,8 @@ export default function Sidebar({ isOpen, onClose }) {
       <h1 className="text-xl font-bold mb-8">Learning</h1>
       <nav className="space-y-4">
         <a href="/" className="block hover:text-cyan-400">📊 Summary</a>
+        <a href="/roadmap" className="block hover:text-cyan-400">🧭Roadmap</a>
+        <a href="/dashboard" className="block hover:text-cyan-400">Dashboard</a>
         <a href="/calendar" className="block hover:text-cyan-400">🗓️ Calendar</a>
         <a href="/checkpoints" className="block hover:text-cyan-400">✅ Checkpoints</a>
         <a href="/notes" className="block hover:text-cyan-400">📝 Notes</a>

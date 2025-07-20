@@ -5,7 +5,7 @@ day: 40
 block: "Seguridad – Autenticación y Autorización"
 section: "Roles y claims"
 topics:
-  - `[Authorize(Roles = "Admin")]`
+  - [Authorize(Roles = "Admin")]
   - Claims personalizados
   - Políticas de autorización
 resources:
