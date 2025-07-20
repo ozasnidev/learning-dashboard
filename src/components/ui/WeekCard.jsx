@@ -24,8 +24,8 @@ export function WeekCard({ title, days }) {
   }
 
   return (
-    <div className="bg-gray-800 rounded-lg p-4 mb-4">
-      <h2 className="text-xl font-semibold mb-2">{title}</h2>
+    <div className="w-full bg-gray-800 rounded-lg p-4 mb-4">
+      <h2 className="text-white text-xl font-semibold mb-2">{title}</h2>
       <ProgressBar progress={progress} />
       <details className="mt-2">
         <summary className="cursor-pointer text-green-400">

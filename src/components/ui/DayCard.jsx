@@ -1,3 +1,5 @@
+import { useState, useEffect } from 'react'
+
 export function DayCard({ id, title, practice, duration, onStatusChange }) {
   const [checked, setChecked] = useState(false)
 
